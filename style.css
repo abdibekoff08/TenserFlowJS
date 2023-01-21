@@ -1,0 +1,11 @@
+.video {
+    transform: scaleX(-1);
+}
+
+.video-btn {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    justify-content: center;
+    margin: 0 auto;
+}

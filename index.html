@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ТРАНСЛЯЦИЯ!</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+</header>
+<body>
+  <div class="py-5">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-8">
+          <div class="card mb-6 shadow-sm">
+            <video class="video" id="video" width="740" height="500" autoplay></video>
+            <canvas hidden id="canvas"></canvas>
+            <div class="card-body">
+              <div class="justify-content-between align-items-center">
+                <div class="btn-group btn-group-sm video-btn">
+                  <button id="start-btn" type="button" class="btn btn-sm btn-outline-success">СТАРТ</button>
+                  <button id="blur-btn" type="button" class="btn btn-sm btn-outline-secondary" disabled>РАЗМЫТЫЙ ФОН</button>
+                  <button id="unblur-btn" type="button" class="btn btn-sm btn-outline-secondary" hidden>ОТМЕНИТЬ</button>
+                  <button id="stop-btn" type="button" class="btn btn-sm btn-outline-danger" disabled>СТОП</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body> 
+</html>
